@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="latihanmf2.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="499.0" prefWidth="484.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Input">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="123.0" layoutY="14.0" text="ADMINISTRASI PENGINAPAN">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="103.0" layoutY="69.0" text="Nama Tamu" />
+                        <Label layoutX="104.0" layoutY="148.0" text="Nomor Ruang" />
+                        <Label layoutX="104.0" layoutY="106.0" text="Jenis Ruang" />
+                        <Label layoutX="104.0" layoutY="190.0" text="Durasi (hari)" />
+                        <TextField fx:id="txtnama" layoutX="203.0" layoutY="65.0" prefHeight="25.0" prefWidth="177.0" />
+                        <ChoiceBox fx:id="chbjenis" layoutX="205.0" layoutY="102.0" prefHeight="25.0" prefWidth="175.0" />
+                        <TextField fx:id="txtnomorruang" layoutX="204.0" layoutY="144.0" prefHeight="25.0" prefWidth="177.0" />
+                        <TextField fx:id="txtdurasi" layoutX="204.0" layoutY="186.0" prefHeight="25.0" prefWidth="177.0" />
+                        <Button fx:id="btnhitung" layoutX="45.0" layoutY="262.0" mnemonicParsing="false" onAction="#hitungklik" text="Hitung" />
+                        <Button fx:id="btnhapus" layoutX="216.0" layoutY="262.0" mnemonicParsing="false" onAction="#hapusklik" text="Hapus" />
+                        <Button fx:id="btnkeluar" layoutX="381.0" layoutY="262.0" mnemonicParsing="false" onAction="#keluarklik" text="Keluar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Output">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="157.0" layoutY="14.0" text="STRUK PENGINAPAN">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="66.0" text="Nama Tamu" />
+                        <Label layoutX="401.0" layoutY="66.0" text="label" />
+                        <Label layoutX="34.0" layoutY="99.0" text="Nomor Ruangan" />
+                        <Label layoutX="34.0" layoutY="134.0" text="Jenis Ruangan" />
+                        <Label layoutX="34.0" layoutY="169.0" text="Tarif (Rp)" />
+                        <Label layoutX="401.0" layoutY="99.0" text="label" />
+                        <Label layoutX="401.0" layoutY="134.0" text="label" />
+                        <Label layoutX="401.0" layoutY="169.0" text="label" />
+                        <Label layoutX="367.0" layoutY="169.0" text="=" />
+                        <Label layoutX="318.0" layoutY="169.0" text="label" />
+                        <Label layoutX="232.0" layoutY="169.0" text="label" />
+                        <Label layoutX="285.0" layoutY="169.0" text="x" />
+                        <Label layoutX="401.0" layoutY="193.0" prefHeight="17.0" prefWidth="76.0" text="______________" />
+                        <Label layoutX="34.0" layoutY="218.0" text="Total Tarif" />
+                        <Label layoutX="401.0" layoutY="218.0" text="label" />
+                        <Label layoutX="34.0" layoutY="248.0" text="Pajak (Rp) " />
+                        <Label layoutX="401.0" layoutY="248.0" text="label" />
+                        <Label layoutX="401.0" layoutY="265.0" prefHeight="17.0" prefWidth="76.0" text="______________" />
+                        <Label layoutX="34.0" layoutY="291.0" text="Pembayaran" />
+                        <Label layoutX="401.0" layoutY="291.0" text="label" />
+                        <Button fx:id="btnhapus2" layoutX="41.0" layoutY="343.0" mnemonicParsing="false" onAction="#hapus2klik" text="Hapus" />
+                        <Button fx:id="btnkembali" layoutX="385.0" layoutY="343.0" mnemonicParsing="false" onAction="#kembaliklik" text="Kembali" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
